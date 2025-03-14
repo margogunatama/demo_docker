@@ -1,12 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        JAVA_HOME = '/usr/lib/jvm/java-17-openjdk'
-        PATH = "$JAVA_HOME/bin:$PATH"
-        DOCKER_NAME = "demo_docker"
-    }
-
     stages {
         stage('Checkout') {
             steps {
